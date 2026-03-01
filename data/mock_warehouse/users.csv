@@ -1,0 +1,22 @@
+user_id,email,company_name,plan_type,signup_date,country,industry
+usr_101,john.smith@techcorp.com,TechCorp Inc,enterprise,2025-06-15,US,technology
+usr_102,sarah.jones@devstudio.io,DevStudio,pro,2025-08-22,UK,software
+usr_103,mike.chen@dataflow.com,DataFlow Systems,enterprise,2025-04-10,US,data_analytics
+usr_104,emma.wilson@bigretail.com,BigRetail Corp,enterprise,2025-03-05,US,retail
+usr_105,alex.kumar@startupxyz.com,StartupXYZ,starter,2025-11-18,IN,fintech
+usr_106,lisa.brown@mediaco.com,MediaCo,pro,2025-09-30,US,media
+usr_107,david.lee@cloudops.io,CloudOps,pro,2025-07-12,CA,cloud_services
+usr_108,maria.garcia@healthtech.com,HealthTech Solutions,enterprise,2025-05-28,US,healthcare
+usr_109,james.taylor@legalfirm.com,Taylor & Associates,pro,2025-10-14,UK,legal
+usr_110,anna.schmidt@germantec.de,GermanTec GmbH,enterprise,2025-02-20,DE,manufacturing
+usr_111,chris.johnson@aiventures.com,AI Ventures,starter,2025-12-01,US,ai_ml
+usr_112,sophie.martin@frenchco.fr,FrenchCo,pro,2025-08-05,FR,consulting
+usr_113,ryan.williams@salesforce.com,SalesForce Pro,enterprise,2025-01-15,US,sales
+usr_114,olivia.davis@marketingpro.com,MarketingPro,pro,2025-09-08,US,marketing
+usr_115,daniel.miller@finserv.com,FinServ Inc,enterprise,2025-04-22,US,finance
+usr_116,emily.anderson@edutech.com,EduTech Learning,starter,2025-11-05,US,education
+usr_117,kevin.thomas@logisticshub.com,LogisticsHub,pro,2025-06-30,US,logistics
+usr_118,rachel.white@hrtech.com,HRTech Solutions,pro,2025-07-25,UK,hr_tech
+usr_119,brandon.jackson@gamedev.io,GameDev Studios,starter,2025-10-28,US,gaming
+usr_120,jennifer.harris@realestate.com,RealEstate Pro,pro,2025-08-15,US,real_estate
+usr_121,matthew.clark@insureco.com,InsureCo,enterprise,2025-03-18,US,insurance

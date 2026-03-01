@@ -1,0 +1,11 @@
+conversion_id,search_event_id,user_id,conversion_type,conversion_value,timestamp
+conv_001,evt_007,,trial_signup,0,2026-02-15 10:36:45
+conv_002,evt_009,usr_102,documentation_read,0,2026-02-15 10:42:30
+conv_003,evt_016,,demo_request,0,2026-02-15 10:59:22
+conv_004,evt_021,,contact_sales,0,2026-02-15 11:11:15
+conv_005,evt_008,usr_105,feature_activation,0,2026-02-15 10:40:18
+conv_006,evt_014,usr_101,case_study_download,0,2026-02-15 10:55:33
+conv_007,evt_006,usr_104,enterprise_inquiry,5000,2026-02-15 10:34:22
+conv_008,evt_028,usr_119,feature_activation,0,2026-02-15 11:28:45
+conv_009,evt_027,,pricing_view,0,2026-02-15 11:26:18
+conv_010,evt_018,usr_111,documentation_read,0,2026-02-15 11:04:55

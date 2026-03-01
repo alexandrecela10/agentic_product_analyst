@@ -1,0 +1,60 @@
+[project]
+name = "agentic-saas-analytics"
+version = "0.1.0"
+description = "Product Success Tracking Agent - RAG-powered analytics for SaaS features"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    # Web framework
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    
+    # LLM - Google Gemini (direct API, no langchain wrapper)
+    "google-generativeai>=0.5.0,<0.8.0",
+    
+    # RAG infrastructure - using older chromadb for macOS x86_64 compatibility
+    "chromadb>=0.4.0,<0.5.0",
+    
+    # Hybrid search (BM25 + semantic)
+    "rank-bm25>=0.2.2",
+    
+    # Web search
+    "tavily-python>=0.5.0",
+    
+    # Observability
+    "langfuse>=2.0.0",
+    "opentelemetry-api>=1.27.0",
+    "opentelemetry-sdk>=1.27.0",
+    "opentelemetry-instrumentation-fastapi>=0.48b0",
+    
+    # Data processing
+    "pandas>=2.2.0",
+    "rapidfuzz>=3.9.0",
+    "numpy<2.0.0",  # ChromaDB 0.4.x requires NumPy 1.x
+    
+    # MCP server
+    "mcp>=1.0.0",
+    
+    # Utilities
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "structlog>=24.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-asyncio>=0.24.0",
+    "ruff>=0.6.0",
+]
+
+[tool.uv]
+# Exclude problematic onnxruntime on macOS x86_64
+exclude-newer = "2025-01-01"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.25.0",
+]

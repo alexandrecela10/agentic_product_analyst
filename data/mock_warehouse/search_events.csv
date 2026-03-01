@@ -1,0 +1,31 @@
+event_id,user_id,session_id,anonymous_id,query,result_count,latency_ms,source_page,device_type,timestamp
+evt_001,usr_101,sess_001,,ai search features,12,145,homepage,desktop,2026-02-15 10:23:45
+evt_002,usr_102,sess_002,,how to integrate api,8,132,docs,desktop,2026-02-15 10:25:12
+evt_003,,sess_003,anon_abc123,pricing plans,5,98,homepage,mobile,2026-02-15 10:26:33
+evt_004,usr_103,sess_004,,semantic search setup,15,167,features,desktop,2026-02-15 10:28:01
+evt_005,usr_101,sess_001,,ai search documentation,10,112,homepage,desktop,2026-02-15 10:30:22
+evt_006,usr_104,sess_005,,enterprise features,7,89,pricing,desktop,2026-02-15 10:32:45
+evt_007,,sess_006,anon_def456,free trial,3,76,homepage,mobile,2026-02-15 10:35:11
+evt_008,usr_105,sess_007,,search analytics dashboard,9,134,docs,desktop,2026-02-15 10:38:29
+evt_009,usr_102,sess_002,,rest api authentication,11,156,docs,desktop,2026-02-15 10:40:55
+evt_010,usr_106,sess_008,,instant answers feature,6,101,features,desktop,2026-02-15 10:43:18
+evt_011,,sess_009,anon_ghi789,compare plans,4,88,pricing,mobile,2026-02-15 10:45:42
+evt_012,usr_107,sess_010,,autocomplete implementation,8,123,docs,desktop,2026-02-15 10:48:05
+evt_013,usr_108,sess_011,,search relevance tuning,0,45,docs,desktop,2026-02-15 10:50:33
+evt_014,usr_101,sess_001,,ai powered search benefits,14,178,homepage,desktop,2026-02-15 10:52:59
+evt_015,usr_109,sess_012,,gdpr compliance,5,92,legal,desktop,2026-02-15 10:55:21
+evt_016,,sess_013,anon_jkl012,demo request,2,67,homepage,mobile,2026-02-15 10:57:48
+evt_017,usr_110,sess_014,,search latency optimization,7,115,docs,desktop,2026-02-15 11:00:14
+evt_018,usr_111,sess_015,,natural language processing,13,189,features,desktop,2026-02-15 11:02:41
+evt_019,usr_112,sess_016,,index configuration,9,142,docs,desktop,2026-02-15 11:05:08
+evt_020,usr_113,sess_017,,search conversion tracking,6,108,analytics,desktop,2026-02-15 11:07:35
+evt_021,,sess_018,anon_mno345,contact sales,1,54,pricing,mobile,2026-02-15 11:10:02
+evt_022,usr_114,sess_019,,faceted search setup,11,163,docs,desktop,2026-02-15 11:12:29
+evt_023,usr_115,sess_020,,search synonyms,8,127,docs,desktop,2026-02-15 11:14:56
+evt_024,usr_116,sess_021,,voice search integration,0,38,features,desktop,2026-02-15 11:17:23
+evt_025,usr_117,sess_022,,search ab testing,5,94,docs,desktop,2026-02-15 11:19:50
+evt_026,usr_118,sess_023,,query understanding,10,151,features,desktop,2026-02-15 11:22:17
+evt_027,,sess_024,anon_pqr678,startup pricing,3,72,pricing,mobile,2026-02-15 11:24:44
+evt_028,usr_119,sess_025,,search personalization,12,174,features,desktop,2026-02-15 11:27:11
+evt_029,usr_120,sess_026,,webhook integration,7,118,docs,desktop,2026-02-15 11:29:38
+evt_030,usr_121,sess_027,,search ranking algorithm,9,145,docs,desktop,2026-02-15 11:32:05
