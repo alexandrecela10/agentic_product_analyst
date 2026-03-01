@@ -239,9 +239,9 @@ print_output("Success Framework Result", "")
 console.print(f"\n[bold]Primary Metrics ({len(framework.primary_metrics)}):[/bold]")
 for i, metric in enumerate(framework.primary_metrics, 1):
     console.print(f"\n  {i}. [cyan]{metric.display_name}[/cyan]")
-    console.print(f"     Type: {metric.metric_type}")
+    console.print(f"     Formula: {metric.formula}")
     console.print(f"     Description: {metric.description}")
-    console.print(f"     Calculation: {metric.calculation}")
+    console.print(f"     Frequency: {metric.frequency}")
 
 console.print(f"\n[bold]Secondary Metrics ({len(framework.secondary_metrics)}):[/bold]")
 for i, metric in enumerate(framework.secondary_metrics, 1):

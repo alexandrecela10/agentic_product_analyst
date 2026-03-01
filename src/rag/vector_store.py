@@ -17,8 +17,8 @@ from typing import Optional
 from pathlib import Path
 from src.core.config import settings
 from src.core.llm_client import embed_text, embed_query
-from src.core.config import settings
 from src.core.observability import get_langfuse, get_logger
+from src.rag.chunker import Chunk
 
 logger = get_logger(__name__)
 

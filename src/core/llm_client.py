@@ -188,23 +188,18 @@ def _trace_to_langfuse(
     name: str,
     model: str,
     input_text: str,
+    system_instruction: Optional[str],
     output_text: str,
     latency_ms: float,
-    system_instruction: Optional[str] = None,
     metadata: Optional[dict] = None
 ):
     """
-    Send trace data to Langfuse.
+    Internal helper to trace LLM calls to Langfuse.
     
     Why a separate function?
     - Keeps the main generate function clean
     - Easy to modify tracing without touching generation logic
     - Gracefully handles missing Langfuse config
-    
-    What gets logged:
-    - A "trace" groups related operations (like one pipeline run)
-    - A "generation" is a single LLM call within that trace
-    - You can see all this in the Langfuse dashboard
     """
     client = get_langfuse()
     if client is None:
@@ -212,27 +207,34 @@ def _trace_to_langfuse(
         return
     
     try:
+        # Prepare input - combine system instruction and prompt
+        full_input = input_text
+        if system_instruction:
+            full_input = f"System: {system_instruction}\n\nUser: {input_text}"
+        
         # Create a trace (top-level grouping)
         trace = client.trace(
             name=name,
+            input=full_input,
+            output=output_text,
             metadata=metadata or {}
         )
         
         # Add the generation (the actual LLM call)
         # This is what you'll see in the Langfuse "Generations" tab
-        trace.generation(
+        generation = trace.generation(
             name=f"{name}_generation",
             model=model,
-            input={
-                "prompt": input_text,
-                "system_instruction": system_instruction
-            } if system_instruction else input_text,
+            input=full_input,
             output=output_text,
             metadata={
                 "latency_ms": round(latency_ms, 2),
                 **(metadata or {})
             }
         )
+        
+        # Update the generation to mark it complete
+        generation.end()
         
         # Flush to ensure data is sent
         # Important: Langfuse batches requests, flush ensures immediate send

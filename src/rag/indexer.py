@@ -1,4 +1,4 @@
-"""
+racing"""
 Document indexer for the RAG pipeline.
 
 Handles loading documents from the knowledge base and indexing them
